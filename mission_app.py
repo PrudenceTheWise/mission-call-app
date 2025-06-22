@@ -438,7 +438,7 @@ if submitted:
     if first_name.strip() and last_name.strip():
         mission_call = random.choice(missions)
         st.success(
-            f"{first_name} {last_name} You are hereby called to serve as a missionary for the Church of Jesus Christ of Latter-day Saints. "
+            f"{first_name.strip()} {last_name.strip()}, You are hereby called to serve as a missionary for the Church of Jesus Christ of Latter-day Saints. "
             f"You are assigned to labor in the **{mission_call}**."
         )
         col1, col2, col3 = st.columns([1,2,1])
