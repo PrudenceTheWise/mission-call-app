@@ -444,8 +444,11 @@ if submitted:
             # Show an image below the message
             st.image(
                 "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfThbLsORqnrYHWNdo7YWxg32E567GRXng-g&s",
-                caption="Called to Serve!",
-                use_column_width=True,
+                use_container_width=True,
+            )
+            st.markdown(
+                "<div style='text-align:center; font-size:2.5em; font-weight:bold;'>Called to Serve</div>",
+                unsafe_allow_html=True
             )
         else:
             st.warning("Please enter both your first and last name.")
