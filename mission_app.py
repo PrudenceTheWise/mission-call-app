@@ -444,8 +444,8 @@ if submitted:
             # Show an image below the message
             st.image(
                 "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfThbLsORqnrYHWNdo7YWxg32E567GRXng-g&s",
-                use_container_width=True,
-                width=10
+               # use_container_width=True,
+                width=400
             )
             st.markdown(
                 "<div style='text-align:center; font-size:2.5em; font-weight:bold;'>Called to Serve</div>",
