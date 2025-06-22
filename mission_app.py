@@ -454,5 +454,5 @@ if submitted:
                 unsafe_allow_html=True
             )
 
-        else:
-            st.warning("Please enter both your first and last name.")
+    else:
+        st.warning("Please enter both your first and last name.")
