@@ -443,7 +443,7 @@ if submitted:
             )
             # Show an image below the message
             st.image(
-                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfThbLsORqnrYHWNdo7YWxg32E567GRXng-g&s",
+                "https://s3-us-west-2.amazonaws.com/ldsbookstore/LDS-15269000.jpg",
                # use_container_width=True,
                 width=400
             )
