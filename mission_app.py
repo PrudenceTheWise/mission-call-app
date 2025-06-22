@@ -426,7 +426,7 @@ missions = [
     "Zimbabwe Harare Mission"
 ]
 
-st.title("Random Mission Assignment")
+st.title("I hope they call me on a mission!")
 st.write("Enter your first and last name to receive your mission call!")
 
 first_name = st.text_input("First Name")
@@ -437,6 +437,6 @@ if st.button("Get My Mission Call!"):
         # Deterministic assignment: same name always gets the same mission
         random.seed(first_name.strip().lower() + last_name.strip().lower())
         mission_call = random.choice(missions)
-        st.success(f"Congratulations! You have been called to serve in the **{mission_call}**.")
+        st.success(f"You are hereby called to serve as a missionary for the Church of Jesus Christ of Latter-day Saints. You are assigned to labor in the  **{mission_call}**.")
     else:
         st.warning("Please enter both your first and last name.")
