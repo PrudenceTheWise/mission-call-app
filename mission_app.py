@@ -434,7 +434,7 @@ with st.form("mission_form"):
     last_name = st.text_input("Last Name")
     submitted = st.form_submit_button("Get My Mission Call!")
 
- if submitted:
+if submitted:
         if first_name.strip() and last_name.strip():
             mission_call = random.choice(missions)
             st.success(f"You are hereby called to serve as a missionary for the Church of Jesus Christ of Latter-day Saints. You are assigned to labor in the **{mission_call}**.")
