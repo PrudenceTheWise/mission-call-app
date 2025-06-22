@@ -434,15 +434,16 @@ with st.form("mission_form"):
     last_name = st.text_input("Last Name")
     submitted = st.form_submit_button("Get My Mission Call!")
 
-if submitted:
+   if submitted:
         if first_name.strip() and last_name.strip():
             mission_call = random.choice(missions)
-            st.success(f"You are hereby called to serve as a missionary for the Church of Jesus Christ of Latter-day Saints. You are assigned to labor in the **{mission_call}**.")
-        else:
-            st.warning("Please enter both your first and last name.")
-  # Show an image below the message
+            st.success(
+                f"You are hereby called to serve as a missionary for the Church of Jesus Christ of Latter-day Saints. "
+                f"You are assigned to labor in the **{mission_call}**."
+            )
+            # Show an image below the message
             st.image(
-                "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2Frussell.m.nelson%2F&psig=AOvVaw139OJNYxllRs_XIc96wevD&ust=1750715058277000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPj7k_v_hY4DFQAAAAAdAAAAABAE",
+                "https://www.churchofjesuschrist.org/imgs/1f7c3e7d6e0b11edb1eecb7f3e4d5a2e4b6d9e7d/full/1600%2C/0/default",
                 caption="Called to Serve!",
                 use_column_width=True,
             )
