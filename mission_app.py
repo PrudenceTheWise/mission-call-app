@@ -440,3 +440,11 @@ if submitted:
             st.success(f"You are hereby called to serve as a missionary for the Church of Jesus Christ of Latter-day Saints. You are assigned to labor in the **{mission_call}**.")
         else:
             st.warning("Please enter both your first and last name.")
+  # Show an image below the message
+            st.image(
+                "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2Frussell.m.nelson%2F&psig=AOvVaw139OJNYxllRs_XIc96wevD&ust=1750715058277000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPj7k_v_hY4DFQAAAAAdAAAAABAE",
+                caption="Called to Serve!",
+                use_column_width=True,
+            )
+        else:
+            st.warning("Please enter both your first and last name.")
