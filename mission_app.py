@@ -443,7 +443,7 @@ if submitted:
             )
             # Show an image below the message
             st.image(
-                "https://www.churchofjesuschrist.org/imgs/1f7c3e7d6e0b11edb1eecb7f3e4d5a2e4b6d9e7d/full/1600%2C/0/default",
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfThbLsORqnrYHWNdo7YWxg32E567GRXng-g&s",
                 caption="Called to Serve!",
                 use_column_width=True,
             )
