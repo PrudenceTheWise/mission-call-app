@@ -429,14 +429,14 @@ missions = [
 st.title("I hope they call me on a mission!")
 st.write("Enter your first and last name to receive your mission call!")
 
-first_name = st.text_input("First Name")
-last_name = st.text_input("Last Name")
+with st.form("mission_form"):
+    first_name = st.text_input("First Name")
+    last_name = st.text_input("Last Name")
+    submitted = st.form_submit_button("Get My Mission Call!")
 
-if st.button("Get My Mission Call!"):
-    if first_name and last_name:
-        # Deterministic assignment: same name always gets the same mission
-        random.seed(first_name.strip().lower() + last_name.strip().lower())
-        mission_call = random.choice(missions)
-        st.success(f"You are hereby called to serve as a missionary for the Church of Jesus Christ of Latter-day Saints. You are assigned to labor in the  **{mission_call}**.")
-    else:
-        st.warning("Please enter both your first and last name.")
+ if submitted:
+        if first_name.strip() and last_name.strip():
+            mission_call = random.choice(missions)
+            st.success(f"You are hereby called to serve as a missionary for the Church of Jesus Christ of Latter-day Saints. You are assigned to labor in the **{mission_call}**.")
+        else:
+            st.warning("Please enter both your first and last name.")
