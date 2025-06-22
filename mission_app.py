@@ -442,14 +442,17 @@ if submitted:
                 f"You are assigned to labor in the **{mission_call}**."
             )
             # Show an image below the message
+        col1, col2, col3 = st.columns([1,2,1])  # Middle column is wider for better centering
+
+        with col2:
             st.image(
-                "https://s3-us-west-2.amazonaws.com/ldsbookstore/LDS-15269000.jpg",
-               # use_container_width=True,
+                "https://www.churchofjesuschrist.org/imgs/1f7c3e7d6e0b11edb1eecb7f3e4d5a2e4b6d9e7d/full/1600%2C/0/default",
                 width=400
             )
             st.markdown(
-                "<div style='text-align:center; font-size:2.5em; font-weight:bold;'>Called to Serve</div>",
+                "<div style='font-size:2.5em; font-weight:bold; text-align:center;'>Called to Serve</div>",
                 unsafe_allow_html=True
             )
+
         else:
             st.warning("Please enter both your first and last name.")
