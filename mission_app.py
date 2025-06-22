@@ -444,7 +444,7 @@ if submitted:
         col1, col2, col3 = st.columns([1,2,1])
         with col2:
             st.image(
-                "https://www.churchofjesuschrist.org/imgs/1f7c3e7d6e0b11edb1eecb7f3e4d5a2e4b6d9e7d/full/1600%2C/0/default",
+                "https://cloudfront-us-east-1.images.arcpublishing.com/deseretnews/IX7OP2FUPQKRA6X3UVSM2NA6TU.jpg",
                 width=400
             )
             st.markdown(
